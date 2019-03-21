@@ -317,7 +317,7 @@ function tin_open_template_redirect(){
 		$OPEN_QQ = array(
 			'APPID'=>ot_get_option('tin_open_qq_id'),
 			'APPKEY'=>ot_get_option('tin_open_qq_key'),
-			'CALLBACK'=>home_url('/?connect=qq')
+			'CALLBACK'=>home_url('/connect/qq')
 		);
 		if( isset($_GET['action']) ){
 			if( trim($_GET['action'])==='login' ){

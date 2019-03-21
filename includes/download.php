@@ -61,7 +61,7 @@
 		</span>
 		<?php endif; ?>
 	<?php } ?>
-	</span>
+
 	<?php if($dlmail==1&&!empty($dlinks)){ ?>
 	<div class="dl-terms">
 		<input type="checkbox" name="dl-terms" id="dl-terms-chk" /><?php _e(' 我同意','tinection'); ?>&nbsp;<a href="<?php bloginfo('url'); echo'/copyright'; ?>" title="Copyright" target="_blank"><?php _e('本站条款','tinection'); ?></a><?php _e('并愿意接收包含最新文章的订阅邮件。','tinection'); ?>

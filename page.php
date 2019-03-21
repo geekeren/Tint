@@ -15,15 +15,6 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part( 'includes/breadcrumbs');?>
-<!-- Header Banner -->
-<?php $headerad=ot_get_option('headerad');if (!empty($headerad)) {?>
-<div id="header-banner">
-	<div class="container">
-		<?php echo ot_get_option('headerad');?>
-	</div>
-</div>
-<?php }?>
-<!-- /.Header Banner -->
 <!-- Main Wrap -->
 <div id="main-wrap">
 	<div id="single-blog-wrap" class="container two-col-container">
@@ -35,29 +26,11 @@
 		<?php tin_post_meta(); ?>
 		<!-- /.Post meta -->
 		<?php the_tags('<div class="sg-tag"><i class="fa fa-tag"></i>&nbsp;&nbsp;',' ','</div>'); ?>
-		<?php $singletopad=ot_get_option('singletopad');if (!empty($singletopad)) {?>
-		<div id="singletop-banner">
-			<?php echo ot_get_option('singletopad');?>
-		</div>
-		<?php }?>
+
 		<div class="single-text">
 		<?php the_content(); ?>
 		</div>
-		<!-- Single Activity -->
-		<div class="sg-act">
-			<?php get_template_part('includes/like_collect'); ?>
-			<?php get_template_part('includes/bdshare'); ?>
-		</div>
-		<!-- /.Single Activity -->		
 
-		<?php $singlebottomad=ot_get_option('singlebottomad');if (!empty($singlebottomad)) {?>
-		<div id="singlebottom-banner">
-			<?php echo ot_get_option('singlebottomad');?>
-		</div>
-		<?php }?>
-		<!-- Single Author Info -->
-		<?php get_template_part('includes/author-info'); ?>
-		<!-- /.Single Author Info -->
 		</div>
 		<!-- /.Content -->
 		<!-- Comments -->
@@ -71,17 +44,6 @@
 	</div>
 </div>
 <!--/.Main Wrap -->
-<!-- Bottom Banner -->
-<?php $bottomad=ot_get_option('bottomad');if (!empty($bottomad)) {?>
-<div id="bottom-banner">
-	<div class="container">
-		<?php echo ot_get_option('bottomad');?>
-	</div>
-</div>
-<?php }else{?>
-<div style="height:50px;"></div>
-<?php }?>
-<!-- /.Bottom Banner -->
 <?php if(ot_get_option('footer-widgets-singlerow') == 'on'){?>
 <div id="ft-wg-sr">
 	<div class="container">
@@ -89,4 +51,4 @@
 	</div>
 </div>
 <?php }?>
-<?php get_footer(); ?>
+<?php get_footer("simple"); ?>

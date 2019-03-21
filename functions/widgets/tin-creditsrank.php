@@ -28,7 +28,7 @@ class tincreditsrank extends WP_Widget {
 			echo '<div class="tincreditsrank"><ul>';
 			foreach ( $creditsranks as $creditsrank) {
 				$user_name = get_user_meta($creditsrank->user_id,'nickname',true);
-				$avatar = tin_get_avatar( $creditsrank->user_id , '40' , tin_get_avatar_type($creditsrank->user_id) );
+				$avatar = tin_get_avatar( $creditsrank->user_id , '40' , tin_get_avatar_type($creditsrank->user_id),$user_name);
 				echo '<li class="tincreditsrank-list"><span class="rank-avatar">'.$avatar.'</span><span class="creditsrank-name"><a href="'.get_author_posts_url($creditsrank->user_id).'" target="_blank" title="'.$user_name.'">'.$user_name.'</a></span><span class="creditsrank-ranking">'.$creditsrank->meta_value.''.__(' 积分','tinection').'</span></li>';
 			}
 			echo '</ul></div>';

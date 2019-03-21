@@ -96,7 +96,7 @@ Template Name: 文章中心
 					<div class="meta">
 						<span class="postlist-meta-cat"><i class="fa fa-bookmark"></i><?php the_category(' ', false); ?></span>
 						<span class="postlist-meta-time"><i class="fa fa-calendar"></i><?php echo timeago( get_gmt_from_date(get_the_time('Y-m-d G:i:s')) ); ?></span>
-						<span class="postlist-meta-views"><i class="fa fa-fire"></i><?php echo '浏览: '.get_tin_traffic( 'single' , get_the_ID() ); ?></span>
+						<span class="postlist-meta-views"><i class="fa fa-fire"></i>&nbsp;&nbsp;<?php _e('浏览','tinection');echo get_tin_traffic( 'single' , get_the_ID() ); ?></span>
 						<span class="postlist-meta-comments"><?php if ( comments_open() ): ?><i class="fa fa-comments"></i><a href="<?php comments_link(); ?>"><?php comments_number( __('<span>评论: </span>0','tinection'), __('<span>评论: </span>1','tinection'), __('<span>评论: </span>%','tinection') ); ?></a><?php  endif; ?></span>
 					</div>
 					<!-- /.Post meta -->

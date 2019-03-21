@@ -15,15 +15,7 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part( 'includes/breadcrumbs');?>
-<!-- Header Banner -->
-<?php $headerad=ot_get_option('headerad');if (!empty($headerad)) {?>
-<div id="header-banner" class="banner">
-	<div class="container">
-		<?php echo ot_get_option('headerad');?>
-	</div>
-</div>
-<?php }?>
-<!-- /.Header Banner -->
+
 <!-- Main Wrap -->
 <div id="main-wrap">
 	<div id="sitenews-wrap" class="container"><?php get_template_part('includes/sitenews'); ?></div>
@@ -45,17 +37,7 @@
 			</div>
 		<?php } ?>
 		<!-- /.Single article intro -->
-		<!-- Top ad -->
-		<?php if(!tin_is_mobile()){ ?>
-			<div id="singletop-banner" class="banner">
-			<?php echo ot_get_option('singletopad');?>
-			</div>
-		<?php }else{ ?>
-			<div id="loopad" class="mobile-ad">
-			<?php echo ot_get_option('singlead1_mobile'); ?>
-			</div>
-		<?php }?>
-		<!-- /.Top ad -->
+
 		<div class="single-thumb">
 			<?php if(has_post_thumbnail()&&ot_get_option('show-single-thumb')=='on'){ 
 				$url = get_post_meta( $post->ID, 'tin_thumb_url', true );

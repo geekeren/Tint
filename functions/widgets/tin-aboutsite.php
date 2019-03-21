@@ -22,7 +22,7 @@ class tinaboutsite extends WP_Widget {
 	?>
 		<?php echo $before_widget; ?>
         <?php if($instance['title'])echo $before_title.$instance['title']. $after_title; ?>
-		<div class="aboutsite"><?php echo ot_get_option('tin_aboutsite'); ?><a target="_blank" href="<?php echo ot_get_option('tin_qqgroup','http://shang.qq.com/wpa/qunwpa?idkey=9dcf8d2c615e22fe02da09ab4ea5e0fac7c0dd5c75dce415e7781e89874e3546'); ?>"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="QQ交流群" title="QQ交流群" style="vertical-align: bottom;"></a></div>
+		<div class="aboutsite"><?php echo ot_get_option('tin_aboutsite'); ?></div>
 		<?php echo $after_widget; ?>
 
 	<?php }

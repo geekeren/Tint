@@ -23,8 +23,7 @@
 			<!-- /.Footer Nav -->
 			<!-- Copyright -->
 			<div id="footer-copyright">&copy;<?php echo tin_copyright_year(); ?>
-				<?php if(ot_get_option('copyright')) echo ot_get_option('copyright'); ?>&nbsp;|&nbsp;Theme by&nbsp;
-				<a href="http://www.zhiyanblog.com/tinection.html"  target="_blank">Tinection</a>.
+				<?php if(ot_get_option('copyright')) echo ot_get_option('copyright'); ?>&nbsp;
 				<?php if(ot_get_option('statisticcode')) echo '&nbsp;|&nbsp;'.ot_get_option('statisticcode'); ?>
 			<?php if(ot_get_option('beian')) echo '&nbsp;|&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">'.ot_get_option('beian').'</a>'; ?>
 			<!--<?php echo get_num_queries();?> queries in <?php timer_stop(1); ?> seconds.-->			
@@ -39,8 +38,9 @@
 <script type="text/javascript">
 	$('.site_loading').animate({'width':'90%'},50);  //第四个节点
 </script>
-</div>
 </section>
+</div>
+
 <?php get_template_part('includes/loginbox'); ?>
 <?php get_template_part('includes/floatbutton'); ?>
 <!-- /.Footer Nav Wrap -->
@@ -74,7 +74,7 @@ var ajax_sign_object = <?php echo ajax_sign_object(); ?>;
 <script type="text/javascript">
 		//在这里定义bds_config
 		var bds_config = {'snsKey':{'tsina':"<?php echo ot_get_option('tin_open_weibo_key','2884429244'); ?>",'tqq':"<?php echo ot_get_option('tin_open_qq_id','101166664'); ?>"}};
-		document.getElementById('bdshell_js').src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+// 		document.getElementById('bdshell_js').src = "https://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
 </script>
 <!-- 引入用户自定义代码 -->
 <?php if(ot_get_option('footercode')) echo ot_get_option('footercode'); ?>

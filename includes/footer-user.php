@@ -15,24 +15,6 @@
 ?>
 <!--  links -->
 <div id="footer-links-icons">
-	<span class="footer-wordpress-link">
-		<a href="http://wordpress.org" target="_blank" class="wordpress">
-			<span class="tinicon-wordpress"><i class="fa fa-wordpress"></i></span>
-			<br>WordPress
-		</a>
-	</span>
-	<span class="footer-aliyun-link">
-		<a href="http://www.zhiyanblog.com/go/aliyun" target="_blank" class="aliyun">
-			<span class="tinicon-aliyun"><i class="fa fa-cloud"></i></span>
-			<br>Aliyun
-		</a>
-	</span>
-	<!--span class="footer-qiniu-link">
-		<a href="http://www.zhiyanblog.com/go/qiniu" target="_blank" class="qiniu">
-			<span class="tinicon-qiniu"></span>
-			<br>Qiniu
-		</a>
-	</span-->
 	<?php if(ot_get_option('tin_sinaweibo')){ ?>
 	<span class="footer-sinaweibo-link">
 		<a href="http://weibo.com/<?php echo ot_get_option('tin_sinaweibo'); ?>" target="_blank" class="sinaweibo">

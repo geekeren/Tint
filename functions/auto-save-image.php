@@ -35,7 +35,7 @@ function post_save_images( $content ){
 			}
 		}
 	}
-	remove_filter( 'content_save_pre', array( $this, 'post_save_images' ) );
+	remove_filter( 'content_save_pre', array( __FUNCTION__, 'post_save_images' ) );
 	return $content;
 }
 	

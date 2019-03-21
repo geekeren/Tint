@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN">
+<html lang="<?php echo get_locale() ?>">
 <?php
 /**
  * Main Template of Tinection WordPress Theme

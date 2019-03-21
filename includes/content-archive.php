@@ -37,5 +37,4 @@
 		$meta_output .= '</div>';
 		echo $meta_output;
 } ?>
-<?php if( $post->post_status=='publish' )get_template_part('includes/thumbnail'); ?>
 </article>

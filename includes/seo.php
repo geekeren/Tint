@@ -13,17 +13,17 @@
 **/
 
 ?>
-<?php if ( is_home()||is_front_page() ) { ?><title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?><?php $paged = get_query_var('paged'); if ( $paged > 1 ) printf(__(' - 第 %s 页 ','tinection'),$paged); ?></title><?php } ?>
-<?php if ( is_search() ) { ?><title><?php _e('搜索结果','tinection'); ?> - <?php bloginfo('name'); ?></title><?php } ?>
-<?php if ( is_single() ) { ?><title><?php echo trim(wp_title('',0)); ?><?php $page = get_query_var('page'); if ( $page > 1 ) printf(__('_第 %s 页 ','tinection'),$page); ?> - <?php bloginfo('name'); ?></title><?php } ?>
-<?php if ( is_page() ) { ?><title><?php if(isset($_GET['pid'])):echo '《'.get_the_title($_GET['pid']).'》- '.__('资源下载','tinection'); else:echo trim(wp_title('',0)); endif; ?> - <?php bloginfo('name'); ?></title><?php } ?>
-<?php if ( is_category() ) { ?><title><?php single_cat_title(); ?> - <?php bloginfo('name'); ?><?php $paged = get_query_var('paged'); if ( $paged > 1 ) printf(__(' - 第 %s 页 ','tinection'),$paged); ?></title><?php } ?>
-<?php if ( is_year() ) { ?><title><?php the_time(__('Y年','tinection')); ?><?php _e('日志归档','tinection'); ?> - <?php bloginfo('name'); ?></title><?php } ?>
-<?php if ( is_month() ) { ?><title><?php the_time(__('Y年n月','tinection')); ?><?php _e('日志归档','tinection'); ?> - <?php bloginfo('name'); ?></title><?php } ?>
-<?php if ( is_day() ) { ?><title><?php the_time(__('Y年n月j日','tinection')); ?><?php _e('日志归档','tinection'); ?> - <?php bloginfo('name'); ?></title><?php } ?>
-<?php if (function_exists('is_tag')) { if ( is_tag() ) { ?><title><?php  single_tag_title("", true); ?> - <?php bloginfo('name'); ?><?php $paged = get_query_var('paged'); if ( $paged > 1 ) printf(__(' - 第 %s 页 ','tinection'),$paged); ?></title><?php } ?><?php } ?>
-<?php if ( is_author() ) {?><title><?php wp_title('');?><?php echo tin_author_page_title(); ?> - <?php bloginfo('name'); ?></title><?php }?>
-<?php if ( is_404() ) {?><title><?php wp_title('');?> - <?php bloginfo('name'); ?></title><?php }?>
+<?php if ( is_home()||is_front_page() ) { ?><title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?><?php $paged = get_query_var('paged'); if ( $paged > 1 ) printf(__(' - 第 %s 页 ','tinection'),$paged); ?></title><?php } ?>
+<?php if ( is_search() ) { ?><title><?php _e('搜索结果','tinection'); ?> | <?php bloginfo('name'); ?></title><?php } ?>
+<?php if ( is_single() ) { ?><title><?php echo trim(wp_title('',0)); ?><?php $page = get_query_var('page'); if ( $page > 1 ) printf(__('_第 %s 页 ','tinection'),$page); ?> | <?php bloginfo('name'); ?></title><?php } ?>
+<?php if ( is_page() ) { ?><title><?php if(isset($_GET['pid'])):echo '《'.get_the_title($_GET['pid']).'》| '.__('资源下载','tinection'); else:echo trim(wp_title('',0)); endif; ?> | <?php bloginfo('name'); ?></title><?php } ?>
+<?php if ( is_category() ) { ?><title><?php single_cat_title(); _e("归档","tinection");?> | <?php bloginfo('name'); ?><?php $paged = get_query_var('paged'); if ( $paged > 1 ) printf(__(' - 第 %s 页 ','tinection'),$paged); ?></title><?php } ?>
+<?php if ( is_year() ) { ?><title><?php the_time(__('Y年','tinection')); ?><?php _e('日志归档','tinection'); ?> | <?php bloginfo('name'); ?></title><?php } ?>
+<?php if ( is_month() ) { ?><title><?php the_time(__('Y年n月','tinection')); ?><?php _e('日志归档','tinection'); ?> | <?php bloginfo('name'); ?></title><?php } ?>
+<?php if ( is_day() ) { ?><title><?php the_time(__('Y年n月j日','tinection')); ?><?php _e('日志归档','tinection'); ?> | <?php bloginfo('name'); ?></title><?php } ?>
+<?php if (function_exists('is_tag')) { if ( is_tag() ) { ?><title><?php  single_tag_title(__("标签：", "tinection"), true); ?> | <?php bloginfo('name'); ?><?php $paged = get_query_var('paged'); if ( $paged > 1 ) printf(__(' - 第 %s 页 ','tinection'),$paged); ?></title><?php } ?><?php } ?>
+<?php if ( is_author() ) {?><title><?php wp_title('');?><?php echo tin_author_page_title(); ?> | <?php bloginfo('name'); ?></title><?php }?>
+<?php if ( is_404() ) {?><title><?php wp_title('');?> | <?php bloginfo('name'); ?></title><?php }?>
 <?php
 if ( is_single() ){
     if ($post->post_excerpt) {
@@ -73,8 +73,8 @@ if (is_page()&&!isset($_GET['pid'])) {
 <meta name="keywords" content="<?php echo rtrim($keywords,','); ?>" />
 <?php } ?>
 <?php if ( is_home()||is_front_page() ) { ?>
-<meta name="description" content="<?php echo ot_get_option('tin_description'); ?>" />
-<meta name="keywords" content="<?php echo ot_get_option('tin_keywords'); ?>" />
+<meta name="description" content="<?php echo ot_get_option('tin_description'.((get_locale() == 'en_US') ? "_en" : "")); ?>" />
+<meta name="keywords" content="<?php echo ot_get_option('tin_keywords'.((get_locale() == 'en_US') ? "_en" : "")); ?>" />
 <?php } ?>
 <?php if ( is_category() ) { ?>
 <meta name="description" content="<?php echo strip_tags(category_description($cat_ID)); ?>" />

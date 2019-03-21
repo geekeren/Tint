@@ -216,12 +216,15 @@ function tin_message_widget(){
 	$content = $_POST['tc'];
 	$admin_email = get_bloginfo ('admin_email');
 	$to = $admin_email;
-	$subject = '来自['.$name.']的邮件消息';
+	$wp_email = $mail;
+	$subject = '来自['.$name.']['.$mail.']的邮件消息';
 	$message = '<p>'.$content.'</p>';
 	$message = tin_mail_template('邮件消息',$message);
-	$wp_email = $mail;
-	$from = "From: \"" . $name . "\" <$wp_email>";
-	$headers = "$from\nContent-Type: text/html; charset=" . get_option('blog_charset') . "\n";
+// 	$from = "From: \"" . $name . "\" <$wp_email>";
+	$headers = array("Content-Type: text/html;charset=" . get_option('blog_charset'));
+// 	$headers[] = "From: $name <blog@wangbaiyuan.cn>";
+    // $headers[] = "Cc: $wp_email";
+// 	$message = $from;
 	wp_mail( $to, $subject, $message, $headers );
 }
 add_action( 'wp_ajax_nopriv_message', 'tin_message_widget' );
@@ -335,8 +338,8 @@ function tin_new_from_email($email){
 	$email = 'no-reply@' . preg_replace('#^www\.#', '', strtolower($_SERVER['SERVER_NAME']));
 	return $email;
 }
-add_filter('wp_email_from_name','tin_new_from_name');
-add_filter('wp_email_from','tin_new_from_email');
+add_filter('wp_mail_from_name','tin_new_from_name');
+// add_filter('wp_mail_from','tin_new_from_email');
 
 /* 找回密码链接
 /* -------------- */

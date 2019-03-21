@@ -32,7 +32,7 @@ function tin_comment($comment, $args, $depth) {
 ?>
 <li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
 	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php echo tin_get_avatar( $comment->user_id , '54' , tin_get_avatar_type($comment->user_id) ); ?>
+	<?php echo tin_get_avatar( $comment->user_id , '128' , tin_get_avatar_type($comment->user_id), $comment->comment_author); ?>
 	<?php $add_below = 'div-comment'; ?>
 	<div class="comment-main">
 		<?php if ( $comment->comment_approved == '0' ) : ?>
@@ -44,7 +44,7 @@ function tin_comment($comment, $args, $depth) {
 		<?php endif; ?>
 		<div class="comment-author">
 			<div class="comment-info">
-				<span class="comment_author_link"><?php if($comment->user_id != 0){echo '<a href="'.get_author_posts_url($comment->user_id).'" class="name">'.$comment->comment_author.'</a>';}else{comment_author_link();} ?></span>
+				<span class="comment_author_link"><?php if($comment->user_id != 0){echo '<a href="'.get_author_posts_url($comment->user_id).'" class="name">'.$comment->comment_author.'</a>';}else{comment_author();} ?></span>
 				<?php if(ot_get_option('comment_vip')=='on') get_author_class($comment->comment_author_email,$comment->user_id); ?>
 				<?php if(ot_get_option('comment_ua')=='on') echo outputbrowser($comment->comment_agent); ?>
 				<?php if(ot_get_option('comment_ip')=='on') { ?><span class="comment_author_ip tooltip-trigger" title="<?php echo sprintf(__('来自%1$s','tinection'),convertip(get_comment_author_ip())); ?>"><img class="ip_img" src="<?php echo THEME_URI.'/images/ua/ip.png'; ?>"></span><?php } ?>
@@ -89,7 +89,7 @@ global $commentcount_quote,$wpdb, $post;
 <li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
    <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
       <?php $add_below = 'div-comment'; ?>
-		<div class="comment-author"><?php $uid = get_user_by_email($comment->comment_author_email)->ID;echo tin_get_avatar($uid, 40, tin_get_avatar_type($uid)); ?>
+		<div class="comment-author"><?php $uid = get_user_by_email($comment->comment_author_email)->ID;echo tin_get_avatar($uid, 40, tin_get_avatar_type($uid),  $comment->comment_author); ?>
 <div style="float:right">
 	<span class="datetime">
  		<?php comment_date('Y-m-d') ?><?php comment_time() ?>

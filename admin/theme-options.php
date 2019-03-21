@@ -128,10 +128,27 @@ function custom_theme_options() {
             'rows'      => '5',
             'section'   => 'general'
         ),
+        // General: Description
+        array(
+            'id'        => 'tin_description_en',
+            'label'     => __('页面描述英文','tinection'),
+            'desc'      => __('网站首页描述(非必须，但对SEO有影响)','tinection'),
+            'type'      => 'textarea_simple',
+            'rows'      => '5',
+            'section'   => 'general'
+        ),
         // General: Keywords
         array(
             'id'        => 'tin_keywords',
             'label'     => __('页面关键词','tinection'),
+            'desc'      => __('网站首页、分类页关键词(非必须，但对SEO有影响，不同关键词用英文逗号隔开)','tinection'),
+            'type'      => 'textarea_simple',
+            'rows'      => '5',
+            'section'   => 'general'
+        ),
+        array(
+            'id'        => 'tin_keywords_en',
+            'label'     => __('页面关键词英文','tinection'),
             'desc'      => __('网站首页、分类页关键词(非必须，但对SEO有影响，不同关键词用英文逗号隔开)','tinection'),
             'type'      => 'textarea_simple',
             'rows'      => '5',
@@ -507,7 +524,7 @@ function custom_theme_options() {
             'type'      => 'textarea_simple',
             'rows'      => '5',
             'section'   => 'blog',
-            'std'       => __('<p>除特别注明外，本站所有文章均为<a href="{url}" title="{name}" target="_blank">{name}</a>原创，转载请注明出处来自<a href="{link}" title="{title}">{link}</a></p>','tinection'),
+            'std'       => __('<p><a href="{url}" title="{name}" target="_blank">{name}</a>著作权保留，转载请注明出处<a href="{link}" title="{title}">{link}</a></p>','tinection'),
         ),
         // Blog: 评论者VIP等级显示
         array(
@@ -1148,16 +1165,7 @@ function custom_theme_options() {
             'std'       => 'contributor',
             'section'   => 'open'
         ),
-        // Ads: 顶部广告
-        array(
-            'id'        => 'headerad',
-            'label'     => __('顶部自定义广告','tinection'),
-            'desc'      => __('在网页顶部加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标签，最大宽度1120px','tinection'),
-            'type'      => 'textarea_simple',
-            'rows'      => '5',
-            'std'       => '',
-            'section'   => 'ads'
-        ),
+
         // Ads: 底部广告
         array(
             'id'        => 'bottomad',
@@ -1168,26 +1176,7 @@ function custom_theme_options() {
             'std'       => '',
             'section'   => 'ads'
         ),
-		// Ads: 首页文章循环内部广告
-        array(
-            'id'        => 'cmswithsidebar_loop_ad',
-            'label'     => __('首页文章循环内部广告','tinection'),
-            'desc'      => __('带边栏首页文章循环内部加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标签，最大宽度800px','tinection'),
-            'type'      => 'textarea_simple',
-            'rows'      => '5',
-            'std'       => '',
-            'section'   => 'ads'
-        ),
-        // Ads: 文章页上方广告
-        array(
-            'id'        => 'singletopad',
-            'label'     => __('文章页上部广告','tinection'),
-            'desc'      => __('在文章顶部加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标签，最大宽度800px','tinection'),
-            'type'      => 'textarea_simple',
-            'rows'      => '5',
-            'std'       => '',
-            'section'   => 'ads'
-        ),
+
         // Ads: 文章页缩略图下方广告
         array(
             'id'        => 'singlethumbad',
@@ -1223,16 +1212,6 @@ function custom_theme_options() {
             'id'        => 'cmntad2',
             'label'     => __('评论区内部广告','tinection'),
             'desc'      => __('在文章评论内部加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标签，最大宽度800px','tinection'),
-            'type'      => 'textarea_simple',
-            'rows'      => '5',
-            'std'       => '',
-            'section'   => 'ads'
-        ),
-		// Ads: 文章页上方移动广告
-        array(
-            'id'        => 'singlead1_mobile',
-            'label'     => __('文章页上部移动广告','tinection'),
-            'desc'      => __('在移动设备文章上部加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标签，推荐宽度320px','tinection'),
             'type'      => 'textarea_simple',
             'rows'      => '5',
             'std'       => '',
@@ -1472,14 +1451,14 @@ function custom_theme_options() {
             'section'   => 'admin'
         ),
         // Admin: 主题语言
-        /*array(
-            'id'        => 'lan_en',
-            'label'     => __('主题英文语言','tinection'),
-            'desc'      => __('是否开启主题英文语言','tinection'),
-            'type'      => 'on-off',
-            'std'       => 'off',
-            'section'   => 'admin'
-        ),*/
+//        array(
+//            'id'        => 'lan_en',
+//            'label'     => __('主题英文语言','tinection'),
+//            'desc'      => __('是否开启主题英文语言','tinection'),
+//            'type'      => 'on-off',
+//            'std'       => 'off',
+//            'section'   => 'admin'
+//        ),
         // Admin: 邮件周刊
         array(
             'id'        => 'newsletter',

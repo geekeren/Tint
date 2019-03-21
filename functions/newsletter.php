@@ -87,6 +87,9 @@ function tin_newsletter_html_foot($type,$num){
 }
 
 function newsletter_posts_issue($issue,$show_browser_link=0){
+    if(!preg_match("/^\d*$/",$issue))    
+        exit();
+        
 	date_default_timezone_set ('Asia/Shanghai');
 	global $wpdb;
 	$issue_posts = get_tin_meta('issue');

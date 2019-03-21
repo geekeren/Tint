@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tincetion\n"
 "POT-Creation-Date: 2015-02-10 12:15+0800\n"
-"PO-Revision-Date: 2015-02-10 12:17+0800\n"
+"PO-Revision-Date: 2018-04-14 16:09+0800\n"
 "Last-Translator: 知言博客 <chinash2010@gmail.com>\n"
 "Language-Team: Tinection <chinash2010@gmail.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -55,9 +55,8 @@ msgid "广告"
 msgstr "Advertizement"
 
 #: admin/theme-options.php:83 author.php:37 author.php:390
-#: functions/credit.php:220 functions/download.php:62
-#: functions/download.php:77 functions/meta-box.php:161
-#: functions/user-page.php:189
+#: functions/credit.php:220 functions/download.php:62 functions/download.php:77
+#: functions/meta-box.php:161 functions/user-page.php:189
 msgid "积分"
 msgstr "Credit"
 
@@ -152,12 +151,10 @@ msgid "上传一个图像作为网站的Logo，推荐大小60x120(max)像素"
 msgstr "Upload a image as website logo,60*120(max)px recommended"
 
 #: admin/theme-options.php:179
-#, fuzzy
 msgid "Gravatar头像源修改"
 msgstr "Duoshuo gravatar server"
 
 #: admin/theme-options.php:180
-#, fuzzy
 msgid "采用多说的Gravatar头像服务器或者SSL链接，解决被墙问题"
 msgstr "Using duoshuo gravatar server for better experience"
 
@@ -222,7 +219,6 @@ msgid "取消WP自动保存"
 msgstr "Cancel wordpress autosave"
 
 #: admin/theme-options.php:243
-#, fuzzy
 msgid ""
 "在WP后台编辑文章过程，会不断自动保存，导致多个版本占用ID，开启此项以取消自动"
 "保存"
@@ -482,6 +478,12 @@ msgstr "[ <strong>is_single</strong> ] Sidebar area of single post page."
 msgid "归档页"
 msgstr "Archive page"
 
+msgid "归档"
+msgstr " Archive"
+
+msgid "标签："
+msgstr "Tag: "
+
 #: admin/theme-options.php:560
 msgid ""
 "[ <strong>is_archive</strong> ] 包括标签页和分类页等，如果该页面有一个独特的"
@@ -507,12 +509,10 @@ msgid "[ <strong>is_search</strong> ] 搜索结果页的边栏."
 msgstr "[ <strong>is_search</strong> ] Sidebar area of search results page."
 
 #: admin/theme-options.php:580
-#, fuzzy
 msgid "下载页"
 msgstr "Download"
 
 #: admin/theme-options.php:581
-#, fuzzy
 msgid "[ <strong>is_download</strong> ] 下载页的边栏."
 msgstr "[ <strong>is_single</strong> ] Sidebar area of single post page."
 
@@ -577,7 +577,6 @@ msgid "首页布局"
 msgstr "Homepage layout"
 
 #: admin/theme-options.php:654
-#, fuzzy
 msgid "首页CMS布局或Blog布局或Blocks块状布局"
 msgstr "CMS or blog layout"
 
@@ -828,7 +827,6 @@ msgid "文章页下部广告"
 msgstr ""
 
 #: admin/theme-options.php:1074
-#, fuzzy
 msgid ""
 "在文章底部加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标"
 "签，最大宽度800px"
@@ -839,7 +837,6 @@ msgid "文章页上部移动广告"
 msgstr ""
 
 #: admin/theme-options.php:1084
-#, fuzzy
 msgid ""
 "在移动设备文章上部加载用户自定义广告代码，可以是javascript或者css，包含完整代"
 "码外标签，推荐宽度320px"
@@ -850,7 +847,6 @@ msgid "文章页底部移动广告"
 msgstr ""
 
 #: admin/theme-options.php:1094
-#, fuzzy
 msgid ""
 "在移动设备文章底部加载用户自定义广告代码，可以是javascript或者css，包含完整代"
 "码外标签，推荐宽度320px"
@@ -890,7 +886,6 @@ msgid "演示页广告"
 msgstr ""
 
 #: admin/theme-options.php:1144
-#, fuzzy
 msgid ""
 "在演示页加载用户自定义广告代码，可以是javascript或者css，包含完整代码外标签，"
 "推荐浮动对联广告"
@@ -1504,7 +1499,7 @@ msgstr "Only once"
 
 #: author.php:479 functions/user-page.php:144
 msgid "文章投稿"
-msgstr ""
+msgstr "Contribute"
 
 #: author.php:481 author.php:486 author.php:491 author.php:496
 #, php-format
@@ -1513,7 +1508,7 @@ msgstr ""
 
 #: author.php:484
 msgid "评论回复"
-msgstr ""
+msgstr "Reply"
 
 #: author.php:489
 msgid "访问推广"
@@ -1698,7 +1693,6 @@ msgid "购买时间"
 msgstr ""
 
 #: author.php:782 includes/store/product.php:67 includes/store/product.php:124
-#, fuzzy
 msgid "数量"
 msgstr "Num:"
 
@@ -1807,17 +1801,14 @@ msgid "自定义头像"
 msgstr "Customize avatar"
 
 #: author.php:962
-#, fuzzy
 msgid "头像来源:"
 msgstr "Avatar"
 
 #: author.php:963
-#, fuzzy
 msgid "昵称:"
 msgstr "Nicky name"
 
 #: author.php:964
-#, fuzzy
 msgid "站点:"
 msgstr "Home"
 
@@ -1848,7 +1839,7 @@ msgstr ""
 
 #: author.php:1001 functions/shop.php:61
 msgid "浏览"
-msgstr ""
+msgstr "View"
 
 #: author.php:1002
 msgid "上传"
@@ -2012,7 +2003,7 @@ msgstr "Post comment"
 
 #: comments.php:34
 msgid "登录并评论"
-msgstr ""
+msgstr ""#: comments.php:34
 
 #: comments.php:34
 msgid "[ 登录 ]"
@@ -2053,20 +2044,19 @@ msgstr "Website"
 
 #: comments.php:93
 msgid "说点什么吧..."
-msgstr ""
+msgstr "Say something"
 
 #: comments.php:95
 msgid " 表情"
 msgstr ""
 
 #: comments.php:96
-#, fuzzy
 msgid " 格式"
 msgstr "Style"
 
 #: comments.php:97
 msgid " 提交评论"
-msgstr ""
+msgstr "Submit Comment"
 
 #: comments.php:98
 msgid "重　　写"
@@ -2179,15 +2169,13 @@ msgstr " Comment closed"
 
 #: functions.php:694 page-articles.php:100
 msgid "<span>评论: </span>0"
-msgstr ""
+msgstr "<span>Comments: </span>0"
 
-#: functions.php:694 page-articles.php:100
 msgid "<span>评论: </span>1"
-msgstr ""
+msgstr "<span>Comments: </span>1"
 
-#: functions.php:694 page-articles.php:100
 msgid "<span>评论: </span>%"
-msgstr ""
+msgstr "<span>Comments: </span>%"
 
 #: functions.php:707
 msgid "0 条评论"
@@ -2952,7 +2940,7 @@ msgstr ""
 
 #: functions/download.php:33
 msgid "下载地址"
-msgstr ""
+msgstr "Download link"
 
 #: functions/download.php:34
 msgid "下载密码:"
@@ -3088,12 +3076,10 @@ msgid "文章内页顶部特色图跳转链接"
 msgstr ""
 
 #: functions/meta-box.php:40
-#, fuzzy
 msgid "文章内容底部版权信息"
 msgstr "Single post page copyright statement"
 
 #: functions/meta-box.php:48
-#, fuzzy
 msgid "页面关键词与描述"
 msgstr "keywords"
 
@@ -3268,9 +3254,8 @@ msgid "编辑商品"
 msgstr ""
 
 #: functions/shop.php:60
-#, fuzzy
 msgid "新商品"
-msgstr "New password"
+msgstr "New good"
 
 #: functions/shop.php:62
 msgid "所有商品"
@@ -3429,17 +3414,17 @@ msgid "此处内容需要登录并 <a href=\"#comments\">发表评论</a> 才可
 msgstr ""
 
 #: functions/user-page.php:118
-#, fuzzy, php-format
+#, php-format
 msgid "登录者 <a href=\"%1$s\">%2$s</a>"
 msgstr "Logged in as <a href=\"%1$s\">%2$s</a>."
 
 #: functions/user-page.php:119
 msgid "登出本帐号"
-msgstr ""
+msgstr "Log out"
 
 #: functions/user-page.php:120
 msgid "登出 &raquo;"
-msgstr ""
+msgstr "Log out"
 
 #: functions/user-page.php:125
 msgid "【重要】请添加正确的邮箱以保证账户安全"
@@ -3482,8 +3467,8 @@ msgstr ""
 #: functions/widgets/tin-mailcontact.php:61
 #: functions/widgets/tin-posts-h.php:125 functions/widgets/tin-posts.php:133
 #: functions/widgets/tin-readerwall.php:57 functions/widgets/tin-site.php:50
-#: functions/widgets/tin-subscribe.php:39
-#: functions/widgets/tin-tagcloud.php:38 functions/widgets/tin-ucenter.php:36
+#: functions/widgets/tin-subscribe.php:39 functions/widgets/tin-tagcloud.php:38
+#: functions/widgets/tin-ucenter.php:36
 msgid "标题："
 msgstr "Title:"
 
@@ -3567,9 +3552,8 @@ msgid "不输出before/after_widget/标题"
 msgstr "Do not output 'before/after_widget/' title"
 
 #: functions/widgets/tin-hotsearch.php:32
-#, fuzzy
 msgid " 次"
-msgstr " "
+msgstr " times"
 
 #: functions/widgets/tin-mailcontact.php:29
 msgid "你的称呼"
@@ -3626,6 +3610,9 @@ msgstr "Posts from:"
 msgid "所有时间"
 msgstr "Anytime"
 
+msgid "文章目录"
+msgstr "Catalog"
+
 #: functions/widgets/tin-posts-h.php:155 functions/widgets/tin-posts.php:163
 #: functions/widgets/tin-tabs.php:315
 msgid "今年"
@@ -3659,7 +3646,7 @@ msgstr "Posts Number:"
 
 #: functions/widgets/tin-site.php:27
 msgid " 篇"
-msgstr " "
+msgstr "  "
 
 #: functions/widgets/tin-site.php:28
 msgid " 评论总数："
@@ -3719,7 +3706,7 @@ msgstr "Latest comments"
 
 #: functions/widgets/tin-tabs.php:181
 msgid "说: "
-msgstr ""
+msgstr "Said"
 
 #: functions/widgets/tin-tabs.php:269
 msgid "标题:"
@@ -3767,7 +3754,7 @@ msgstr "Tab info"
 
 #: includes/author-info.php:20
 msgid "关于"
-msgstr ""
+msgstr "About"
 
 #: includes/author-info.php:35
 msgid "作者主页"
@@ -3833,7 +3820,7 @@ msgstr "Error, page not found"
 
 #: includes/breadcrumbs.php:42
 msgid " 用户中心"
-msgstr ""
+msgstr "User Manage"
 
 #: includes/breadcrumbs.php:45
 msgid " 分类文章"
@@ -3882,8 +3869,10 @@ msgid "附件"
 msgstr "Attachment"
 
 #: includes/catlist_bar_6.php:30 includes/catlist_bar_6.php:45
+msgid "浏览: "
+msgstr "Views: "
 msgid "&nbsp;&nbsp;浏览: "
-msgstr ""
+msgstr "&nbsp;&nbsp;Views: "
 
 #: includes/content-archive.php:35
 #, php-format
@@ -3937,7 +3926,7 @@ msgstr "TW"
 
 #: includes/focus.php:17
 msgid "关注我们"
-msgstr ""
+msgstr "Follow Me"
 
 #: includes/focus.php:26
 msgid "QQ"
@@ -3945,10 +3934,9 @@ msgstr ""
 
 #: includes/focus.php:27
 msgid "发送邮件"
-msgstr ""
+msgstr "Send Email"
 
 #: includes/focus.php:42
-#, fuzzy
 msgid "输入邮箱,订阅本站"
 msgstr "Subscribe"
 
@@ -4006,11 +3994,11 @@ msgstr "Latest posts"
 
 #: includes/index-cms.php:51
 msgid "+ 更多"
-msgstr ""
+msgstr "+ More"
 
 #: includes/index-cms.php:77
 msgid "→ 更多"
-msgstr ""
+msgstr "→ More"
 
 #: includes/like_collect.php:18 includes/like_collect_meta.php:17
 msgid "点击喜欢"
@@ -4018,7 +4006,7 @@ msgstr "click to like"
 
 #: includes/like_collect.php:20
 msgid "人喜欢 "
-msgstr ""
+msgstr "Likes"
 
 #: includes/like_collect.php:33 includes/like_collect_meta.php:24
 msgid "点击收藏"
@@ -4026,7 +4014,7 @@ msgstr "click to collect"
 
 #: includes/like_collect.php:35 includes/like_collect.php:46
 msgid "人收藏 "
-msgstr ""
+msgstr "Collects"
 
 #: includes/like_collect.php:38 includes/like_collect.php:40
 #: includes/like_collect_meta.php:28
@@ -4139,46 +4127,45 @@ msgstr ""
 
 #: includes/stickys.php:25 includes/stickys.php:34
 msgid "置顶推荐"
-msgstr ""
+msgstr "Recommend Posts"
 
 #: includes/stickys.php:28
 msgid "最新发布"
-msgstr ""
+msgstr "New"
 
 #: includes/stickys.php:50
 #, php-format
 msgid "浏览: %1$s"
-msgstr ""
+msgstr "Views: %1$s"
 
 #: includes/stickys.php:51
 msgid "评论: 0"
-msgstr ""
+msgstr "Comment:0"
 
 #: includes/stickys.php:51
 msgid "评论: 1"
-msgstr ""
+msgstr "Comment:1"
 
 #: includes/stickys.php:51
 msgid "评论: %"
-msgstr ""
+msgstr "Comments:%"
 
 #: includes/stickys.php:51 includes/stickys.php:88
-#, fuzzy
 msgid "评论关闭"
 msgstr " Comment closed"
 
 #: includes/stickys.php:87
 #, php-format
 msgid "浏览(%1$s)"
-msgstr ""
+msgstr "Views(%1$s)"
 
 #: includes/stickys.php:88
 msgid "评论(0)"
-msgstr ""
+msgstr "Comment(0)"
 
 #: includes/stickys.php:88
 msgid "评论(1)"
-msgstr ""
+msgstr "Comment(1)"
 
 #: includes/stickys.php:88
 msgid "评论(%)"
@@ -4193,27 +4180,22 @@ msgid "人气："
 msgstr ""
 
 #: includes/store/product.php:34
-#, fuzzy
 msgid "分享："
 msgstr "Share"
 
 #: includes/store/product.php:35
-#, fuzzy
 msgid "分享到QQ空间"
 msgstr "Qzone"
 
 #: includes/store/product.php:36
-#, fuzzy
 msgid "分享到新浪微博"
 msgstr "Sina weibo"
 
 #: includes/store/product.php:37
-#, fuzzy
 msgid "分享到腾讯微博"
 msgstr "Tecent weibo"
 
 #: includes/store/product.php:38
-#, fuzzy
 msgid "分享到微信"
 msgstr "Share to Sina weibo"
 
@@ -4272,11 +4254,11 @@ msgstr ""
 
 #: includes/store/product.php:115
 msgid "点击登录"
-msgstr ""
+msgstr "Login In"
 
 #: includes/store/product.php:115
 msgid "立即登录"
-msgstr ""
+msgstr "Login In"
 
 #: includes/store/product.php:118
 msgid "Tips：若商品可循环使用则无须多次购买"
@@ -4328,7 +4310,7 @@ msgstr ""
 
 #: includes/store/product.php:185
 msgid "收货地址："
-msgstr ""
+msgstr "Shipping address"
 
 #: includes/store/product.php:186
 msgid "收货邮编："
@@ -4336,7 +4318,7 @@ msgstr ""
 
 #: includes/store/product.php:187
 msgid "用户邮箱："
-msgstr ""
+msgstr "Email"
 
 #: includes/store/product.php:188
 msgid "电话号码："
@@ -4348,7 +4330,7 @@ msgstr ""
 
 #: includes/store/product.php:190
 msgid "留言备注："
-msgstr ""
+msgstr "remarks"
 
 #: includes/store/product.php:197
 msgid "使用优惠码"
@@ -4356,11 +4338,11 @@ msgstr ""
 
 #: includes/store/product.php:200
 msgid "立即付款"
-msgstr ""
+msgstr "Pay Now"
 
 #: includes/store/product.php:201
 msgid "总金额："
-msgstr ""
+msgstr "Total Amount:"
 
 #: page-archives.php:45
 msgid "下目前共有文章："
@@ -4404,6 +4386,8 @@ msgstr "  Date:"
 #: page-download.php:69
 msgid "如果您暂时不需或无法下载，您也可以邮件发送下载链接(收费资源除外)："
 msgstr ""
+"If you don't need it or can't download it, you can also send a download link "
+"by email (except for charged resources):"
 
 #: page-download.php:77
 msgid "我同意"
@@ -4457,6 +4441,9 @@ msgid ""
 "部分文件引用的官方或者非网盘类他站下载链接，你可能需要使用迅雷、BT等下载工具"
 "下载！"
 msgstr ""
+"Part of the file refers to the official or non-network category he station "
+"download links, you may need to use Thunderbolt, BT download tools such as "
+"download!"
 
 #: page-download.php:123
 msgid ""
@@ -4469,6 +4456,10 @@ msgid ""
 "本站仅提供文件的免费下载服务，如果你对代码程序软件的使用有任何疑惑，请留意相"
 "关网站论坛。对于本站个人发布的资源，站长会提供有限的帮助！"
 msgstr ""
+"This site only provides free download services for files. If you have any "
+"doubts about the use of code program software, please pay attention to the "
+"related website forum. The webmaster will provide limited help for the "
+"resources released by this site personally!"
 
 #: page-download.php:186
 msgid "资源购买"
@@ -4572,7 +4563,7 @@ msgstr "Search.."
 
 #: single.php:44
 msgid "导语："
-msgstr ""
+msgstr "Lead:"
 
 #: single.php:108
 msgid "上一篇"
@@ -4583,169 +4574,190 @@ msgid "下一篇"
 msgstr "NEXT"
 
 #, fuzzy
-#~ msgid "Layouts have been deleted."
-#~ msgstr "All installations have been completed."
+ msgid "Layouts have been deleted."
+ msgstr "All installations have been completed."
 
-#~ msgid "分类及文章ID对照表"
-#~ msgstr "Categories&Posts ID"
+ msgid "分类及文章ID对照表"
+ msgstr "Categories&Posts ID"
 
-#~ msgid ""
-#~ "<p>本文原始地址：<a href=\"{link}\" title=\"{title}\">{link}</a></p><p>本"
-#~ "站所有文章，除特别注明外，均为本站原创，转载请注明出处来自<a href="
-#~ "\"{url}\" title=\"{name}\">{url}</a></p>"
-#~ msgstr ""
-#~ "<p>Post original link:<a href=\"{link}\" title=\"{title}\">{link}</a></"
-#~ "p><p>Posts without special indication of this site is original, share it "
-#~ "with link: <a href=\"{url}\" title=\"{name}\">{url}</a></p>"
+ msgid ""
+ "<p>本文原始地址：<a href=\"{link}\" title=\"{title}\">{link}</a></p><p>本"
+ "站所有文章，除特别注明外，均为本站原创，转载请注明出处来自<a href="
+ "\"{url}\" title=\"{name}\">{url}</a></p>"
+ msgstr ""
+ "<p>Post original link:<a href=\"{link}\" title=\"{title}\">{link}</a></"
+ "p><p>Posts without special indication of this site is original, share it "
+ "with link: <a href=\"{url}\" title=\"{name}\">{url}</a></p>"
 
-#~ msgid "评论框表情"
-#~ msgstr "comment expression images"
+ msgid "评论框表情"
+ msgstr "comment expression images"
 
-#~ msgid "评论框添加表情支持"
-#~ msgstr "comment support expression images"
+ msgid "评论框添加表情支持"
+ msgstr "comment support expression images"
 
-#~ msgid "移动设备隐藏浮动小工具"
-#~ msgstr "Hide float tools for mobile device"
+ msgid "移动设备隐藏浮动小工具"
+ msgstr "Hide float tools for mobile device"
 
-#~ msgid ""
-#~ "在低分辨率移动设备上关闭右下角浮动小工具，仅仅保留回到顶部按钮，以减少空间"
-#~ "占用"
-#~ msgstr ""
-#~ "Hide float button on right-bottom position of  a page, only ScrolltoTop "
-#~ "button reserved"
+ msgid ""
+ "在低分辨率移动设备上关闭右下角浮动小工具，仅仅保留回到顶部按钮，以减少空间"
+ "占用"
+ msgstr ""
+ "Hide float button on right-bottom position of  a page, only ScrolltoTop "
+ "button reserved"
 
-#~ msgid "404错误页"
-#~ msgstr "Error 404 page"
+ msgid "404错误页"
+ msgstr "Error 404 page"
 
-#~ msgid "[ <strong>is_404</strong> ] 404错误页的边栏."
-#~ msgstr "[ <strong>is_404</strong> ] Sidebar area of 404 error page."
+ msgid "[ <strong>is_404</strong> ] 404错误页的边栏."
+ msgstr "[ <strong>is_404</strong> ] Sidebar area of 404 error page."
 
-#~ msgid "首页幻灯片右侧补充文章排序法"
-#~ msgstr "Recommend posts oder"
+ msgid "首页幻灯片右侧补充文章排序法"
+ msgstr "Recommend posts oder"
 
-#~ msgid ""
-#~ "首页幻灯片右侧推荐区置顶文章不够6篇时，补充文章的排序算法，默认最多评论文"
-#~ "章排序"
-#~ msgstr ""
-#~ "If sticky posts less than 6, recommend posts will snatch other post under "
-#~ "specified rules"
+ msgid ""
+ "首页幻灯片右侧推荐区置顶文章不够6篇时，补充文章的排序算法，默认最多评论文"
+ "章排序"
+ msgstr ""
+ "If sticky posts less than 6, recommend posts will snatch other post under "
+ "specified rules"
 
-#~ msgid "最多浏览排序"
-#~ msgstr "Most viewed"
+ msgid "最多浏览排序"
+ msgstr "Most viewed"
 
-#~ msgid "最多评论排序"
-#~ msgstr "Most reviewed"
+ msgid "最多评论排序"
+ msgstr "Most reviewed"
 
-#~ msgid "首页单栏布局排序"
-#~ msgstr "Posts order in CMS layout"
+ msgid "首页单栏布局排序"
+ msgstr "Posts order in CMS layout"
 
-#~ msgid "首页单栏布局文章块乱序或分类排序(CMS),开启选项表示乱序，默认为关闭"
-#~ msgstr "Switching it on means posts ordered by post date"
+ msgid "首页单栏布局文章块乱序或分类排序(CMS),开启选项表示乱序，默认为关闭"
+ msgstr "Switching it on means posts ordered by post date"
 
-#~ msgid "首页CMS布局是否开启侧边栏"
-#~ msgstr "Using sidebar in CMS layout"
+ msgid "首页CMS布局是否开启侧边栏"
+ msgstr "Using sidebar in CMS layout"
 
-#~ msgid "用户名"
-#~ msgstr "Username"
+ msgid "用户名"
+ msgstr "Username"
 
-#~ msgid "登录者："
-#~ msgstr "User: "
+ msgid "登录者："
+ msgstr "User: "
 
-#~ msgid "（必须）"
-#~ msgstr "( * )"
+ msgid "（必须）"
+ msgstr "( * )"
 
-#~ msgid "（必须、保密）"
-#~ msgstr "( * )"
+ msgid "（必须、保密）"
+ msgstr "( * )"
 
-#~ msgid "去申请一个自己的Gravatar全球通用头像"
-#~ msgstr "Apply for a worldwide Gvatar"
+ msgid "去申请一个自己的Gravatar全球通用头像"
+ msgstr "Apply for a worldwide Gvatar"
 
-#~ msgid "提交留言"
-#~ msgstr "Submit"
+ msgid "提交留言"
+ msgstr "Submit"
 
-#~ msgid "[置顶]"
-#~ msgstr "[STICKY]"
+ msgid "[置顶]"
+ msgstr "[STICKY]"
 
-#~ msgid "沙发"
-#~ msgstr "Sofa"
+ msgid "沙发"
+ msgstr "Sofa"
 
-#~ msgid "板凳"
-#~ msgstr "Stool"
+ msgid "板凳"
+ msgstr "Stool"
 
-#~ msgid "地板"
-#~ msgstr "Floor"
+ msgid "地板"
+ msgstr "Floor"
 
-#~ msgid "楼"
-#~ msgstr "#"
+ msgid "楼"
+ msgstr "#"
 
-#~ msgid "Log out of this account"
-#~ msgstr "Log out of this account"
+ msgid "Log out of this account"
+ msgstr "Log out of this account"
 
-#~ msgid "Log out &raquo;"
-#~ msgstr "Log out &raquo;"
+ msgid "Log out &raquo;"
+ msgstr "Log out &raquo;"
 
-#~ msgid " 个人资料"
-#~ msgstr " Profile"
+ msgid " 个人资料"
+ msgstr " Profile"
 
-#~ msgid "焦点"
-#~ msgstr "FOCUS"
+ msgid "焦点"
+ msgstr "FOCUS"
 
-#~ msgid "请输入用户名"
-#~ msgstr "Username"
+ msgid "请输入用户名"
+ msgstr "Username"
 
-#~ msgid "密码"
-#~ msgstr "Password"
+ msgid "密码"
+ msgstr "Password"
 
-#~ msgid "  现在注册"
-#~ msgstr "  Register now"
+ msgid "  现在注册"
+ msgstr "  Register now"
 
-#~ msgid "人喜欢"
-#~ msgstr " likes"
+ msgid "人喜欢"
+ msgstr " likes"
 
-#~ msgid "人收藏"
-#~ msgstr " collects"
+ msgid "人收藏"
+ msgstr " collects"
 
-#~ msgid "直接使用社交账号登录"
-#~ msgstr "Using social login"
+ msgid "直接使用社交账号登录"
+ msgstr "Using social login"
 
-#~ msgid "还不是会员 ?"
-#~ msgstr "Without membership?"
+ msgid "还不是会员 ?"
+ msgstr "Without membership?"
 
-#~ msgid "现在注册"
-#~ msgstr "Register now"
+ msgid "现在注册"
+ msgstr "Register now"
 
-#~ msgid "后台"
-#~ msgstr "Dashboard"
+ msgid "后台"
+ msgstr "Dashboard"
 
-#~ msgid "发布"
-#~ msgstr "post"
+ msgid "发布"
+ msgstr "post"
 
-#~ msgid "使用 "
-#~ msgstr "use"
+ msgid "使用 "
+ msgstr "use"
 
-#~ msgid " 或 "
-#~ msgstr " or "
+ msgid " 或 "
+ msgstr " or "
 
-#~ msgid "快速登录"
-#~ msgstr "quick login"
+ msgid "快速登录"
+ msgstr "quick login"
 
-#~ msgid "的个人资料"
-#~ msgstr "profile"
+ msgid "的个人资料"
+ msgstr "profile"
 
-#~ msgid "友情链接"
-#~ msgstr "Links"
+ msgid "友情链接"
+ msgstr "Links"
 
-#~ msgid "Tinection主题已更新至<a color=\"red\">"
-#~ msgstr "Tinection has updated to <a color=\"red\">"
+ msgid "Tinection主题已更新至<a color=\"red\">"
+ msgstr "Tinection has updated to <a color=\"red\">"
 
-#~ msgid ""
-#~ "[ <strong>is_home</strong> ] 如果该页面有一个独特的边栏，将覆盖默认边栏."
-#~ msgstr ""
-#~ "[ <strong>is_home</strong> ] A specified sidebar area will be instead of "
-#~ "default sidebar area."
+ msgid ""
+ "[ <strong>is_home</strong> ] 如果该页面有一个独特的边栏，将覆盖默认边栏."
+ msgstr ""
+ "[ <strong>is_home</strong> ] A specified sidebar area will be instead of "
+ "default sidebar area."
 
-#~ msgid "访问主题专页 "
-#~ msgstr "Visit Tinection Homepage"
+ msgid "访问主题专页 "
+ msgstr "Visit Tinection Homepage"
 
-#~ msgid "获取主题最新版本 "
-#~ msgstr "Get latest Tinection theme"
+ msgid "获取主题最新版本 "
+ msgstr "Get latest Tinection theme"
+
+ msgid "年前"
+ msgstr " years ago"
+
+ msgid "个月前"
+ msgstr " months ago"
+
+ msgid "周前"
+ msgstr " weeks ago"
+
+ msgid "天前"
+ msgstr " days ago"
+
+ msgid "小时前"
+ msgstr " hours ago"
+
+ msgid "分钟前"
+ msgstr " minutes ago"
+
+ msgid "秒前"
+ msgstr " seconds ago"

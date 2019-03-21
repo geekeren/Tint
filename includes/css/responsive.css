@@ -217,8 +217,8 @@ input#subscribe{width:240px}
 .slider-newest{width:98%;}
 .slider-newest-articles article{width:50%;float:left;}
 .nav-wrap{width:98%;}
-#sidebar .widget{width:48%;float:left;margin-left:3px;margin-right:3px;}
-#sidebar{max-width: 800px;margin-left:auto;margin-right:auto;}
+#sidebar .widget{width:100%;margin-left:3px;margin-right:3px;}
+#sidebar{column-count: 2;max-width: 800px;margin-left:auto;margin-right:auto;}
 }
 
 @media screen and (max-width: 800px) and (min-width:641px){

@@ -130,7 +130,7 @@ function tin_user_profile_widget(){
 	$li_output .= '<li style="line-height:36px;clear: both;">'.tin_get_avatar( $current_user->ID , '36' , tin_get_avatar_type($current_user->ID), false ) .
 		sprintf(__('登录者 <a href="%1$s">%2$s</a>','tinection'), get_edit_profile_url($current_user->ID), $current_user->display_name) . 
 		'<a href="'.wp_logout_url(tin_get_current_page_url()).'" title="'.esc_attr__('登出本帐号').'">' .
-		__('登出 &raquo;') . 
+		__('登出 &raquo;','tinection') .
 		'</a></li>';
 
 	if(!filter_var($current_user->user_email, FILTER_VALIDATE_EMAIL)){

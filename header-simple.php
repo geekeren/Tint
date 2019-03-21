@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN">
 <?php
 /**
  * Main Template of Tinection WordPress Theme

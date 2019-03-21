@@ -14,7 +14,6 @@
 body {font-size: 15px;-ms-word-break: break-all;word-break: break-all;word-wrap: break-word;overflow-wrap: break-word;background: #fff;  color: #606060;font-family: "Microsoft YaHei",Arial,"Open Sans",SimSun,sans-serif;font-weight: 300;width: 760px;line-height: 160%;}
 
 h1,h3,h4,h5,h6{margin: 10px 0;}
-h2 {margin: 10px 0 10px -23px;border-left:3px solid #222; padding:0 5px 0 20px; background:#fafafa;line-height:35px;}
 h2:before{padding:0 5px;font: normal 25px/25px FontAwesome; border-bottom: 4px solid #222;}
 p {text-indent:2em;line-height: 180%;margin: 10px 0}
 a{color: #308DDD;text-decoration: underline}
@@ -31,3 +30,17 @@ code {padding:2px 4px;color:#d14;background-color:#fbfbfb;border:1px solid #e1e1
 .alignleft {display:inline;float:left;margin: 0 10px 10px 0;}
 .alignright {display:inline;float:right;margin:0 0 10px 10px;}
 .aligncenter {clear:both;display:block;margin-left:auto;margin-right:auto;}
+table {width: 100%;max-width: 100%;margin-bottom: 20px;border: 1px solid #ddd;border-collapse: collapse;}
+table tr td {padding: 8px;vertical-align: middle;border: 1px solid #aaa;}
+img{margin:20px auto;}
+img.wp-smiley{margin:0;}
+ ul li{margin-left: 20px;}
+ul li:before{content:"\f0da" ;font-family: FontAwesome;color:#4cc6a9;margin-right: 5px;}
+ body{width: 100%; background: #fff; font-size: 14px; padding: 10px 20px;font-family: "Microsoft YaHei","寰蒋闆呴粦",Arial,"Open Sans",SimSun,sans-serif;}
+ h2 {border-left:5px solid #00a67c; padding:0 5px 0 20px; background:#fafafa;line-height:35px;}
+ h1, h3, h4, h5, h6{margin: 10px 0;}
+
+p {text-indent:2em;line-height: 180%;margin: 10px 0}
+p a{text-decoration: underline}
+.content p a:hover{text-decoration: underline;text-decoration-style锛歞otted;/*color:#d9534f*/}
+.content p a:after{content: ""; font:normal 12px/12px FontAwesome;padding-left: 3px;}

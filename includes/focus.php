@@ -36,7 +36,7 @@
 	<p class="focus-content">订阅到： <a rel="external nofollow" target="_blank" href="http://xianguo.com/subscribe?url=<?php bloginfo('rss2_url'); ?>">鲜果</a>
 		<a rel="external nofollow" target="_blank" href="http://reader.youdao.com/b.do?keyfrom=bookmarklet&amp;url=<?php bloginfo('rss2_url'); ?>">有道</a>
 		<a rel="external nofollow" target="_blank" href="http://feedly.com/index.html#subscription%2Ffeed%2F<?php bloginfo('rss2_url'); ?>">Feedly</a></p>
-	<form action="http://list.qq.com/cgi-bin/qf_compose_send" target="_blank" method="post">
+	<form action="https://list.qq.com/cgi-bin/qf_compose_send" target="_blank" method="post">
 		<input type="hidden" name="t" value="qf_booked_feedback" />
 		<input type="hidden" name="id" value="<?php echo ot_get_option('tin_qqlist'); ?>" />
 		<input type="email" name="to" id="to" class="focus-email" placeholder="<?php _e('输入邮箱,订阅本站','tinection'); ?>" required />

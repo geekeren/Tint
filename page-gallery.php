@@ -148,7 +148,7 @@ $(function(){
 </script>
 <script type="text/javascript">
 /* <![CDATA[ */
-var tin = {"ajax_url":"<?php echo admin_url( '/admin-ajax.php' ); ?>","tin_url":"<?php echo get_bloginfo('template_directory'); ?>","Tracker":<?php echo json_encode(tin_tracker_param()); ?>,"home":"<?php echo get_bloginfo('url'); ?>"};
+var tin = {"ajax_url":"<?php echo admin_url( '/admin-ajax.php'); ?>","tin_url":"<?php echo get_bloginfo('template_directory'); ?>","Tracker":<?php echo json_encode(tin_tracker_param()); ?>,"home":"<?php echo get_bloginfo('url'); ?>"};
 /* ]]> */
 </script>
 <?php get_footer('simple'); ?>

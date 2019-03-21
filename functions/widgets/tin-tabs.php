@@ -171,7 +171,7 @@ class TinTabs extends WP_Widget {
 					
 						<?php if($instance['comments_avatars']) { // Avatars enabled? ?>
 						<div class="tab-item-avatar">
-							<?php echo tin_get_avatar( $comment->user_id , '96' , tin_get_avatar_type($comment->user_id) ); ?>
+							<?php echo tin_get_avatar( $comment->user_id , '96' , tin_get_avatar_type($comment->user_id) ,$comment->comment_author); ?>
 						</div>
 						<?php } ?>
 						
