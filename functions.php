@@ -493,7 +493,6 @@ function tin_thumb_source($src, $w = 375, $h = 250, $customize = true)
     if ($timthumb === 'on' && $imgtype != '.gif') {
         $img = get_bloginfo('template_url') . '/functions/timthumb.php?src=' . $src . '&q=90&w=' . $w . '&h=' . $h . '&zc=1';
     } else {
-        if (empty($cloudimgsuffix) || $customize == false) $cloudimgsuffix = '?imageView2/1/w/' . $w . '/h/' . $h . '/q/100';
         $img = $src . $cloudimgsuffix;
     }
     if (is_home() && $layout == 'blocks' && $blocks_style == 'fluid_blocks') {

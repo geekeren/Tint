@@ -13,7 +13,7 @@
 **/
 
 ?>
-<?php if(ot_get_option('lazy_load_img')=='on')$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+<?php $lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original'; ?>
 <div class="relpost">
 <?php 
 	$backup = $post;

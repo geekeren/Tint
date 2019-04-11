@@ -621,7 +621,7 @@ body.home .two-col-container{margin-top: 10px;}
 .relpost {margin-top:20px;}
 .relpost ul{width:100%; overflow:hidden;}
 .relpost ul li{width:25%; float:left;display:inline-block; padding:5px;}
-.relpost-inner-pic{position:relative;max-height:135px;overflow:hidden;}
+.relpost-inner-pic{position:relative;height:135px;overflow:hidden;}
 .relpost-inner-pic img{display:block;width:100%;border-radius:0;box-shadow:none;}
 .relpost-inner-pic span {position:relative; opacity:0; filter: alpha(opacity=0); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; background:rgba(0,0,0,0.3); width: 100%; height: 100%;float: left; position: absolute; top:0; left: 0; border-radius: 3px; -webkit-transition: all 450ms ease;-moz-transition: all .6s ease;-ms-transition: all .6s ease;-o-transition: all .6s ease;transition: all .6s ease;max-height: 135px;}
 .relpost-inner-pic span:hover {display: block;opacity: 1;filter: alpha(opacity=100);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}

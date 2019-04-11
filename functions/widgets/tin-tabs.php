@@ -70,7 +70,7 @@ class TinTabs extends WP_Widget {
 	}
 	if ( $tabs && ($count > 1) ) { $output .= $this->_create_tabs($titles,$tabs,$count); }
 ?>
-	<?php if(ot_get_option('lazy_load_img')=='on')$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+	<?php $lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original' ?>
 	<div class="tin-tabs-container">
 		<?php if($instance['recent_enable']) { // Recent posts enabled? ?>
 			<?php $recent=new WP_Query(); ?>

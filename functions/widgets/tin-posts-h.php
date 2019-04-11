@@ -47,7 +47,7 @@ class TinPostsh extends WP_Widget {
 			),
 		) );
 	?>
-	<?php if(ot_get_option('lazy_load_img')=='on')$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+	<?php $lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original'; ?>
 	<ul class="tin-postsh group <?php if($instance['posts_thumb']) { echo 'thumbs-enabled'; } ?>">
 		<?php while ($posts->have_posts()): $posts->the_post(); ?>
 		<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>

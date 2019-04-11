@@ -14,7 +14,7 @@
 
 ?>
 <?php $thelayout = the_layout(); ?>
-<?php if(ot_get_option('lazy_load_img')=='on'&&($thelayout!='blocks'||($thelayout=='blocks'&&ot_get_option('blocks_style')!='fluid_blocks')))$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+<?php if(($thelayout!='blocks'||($thelayout=='blocks'&&ot_get_option('blocks_style')!='fluid_blocks')))$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
 <?php if ( has_post_thumbnail() ) { ?>
 	<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');?>
 	<?php $imgsrc = $large_image_url[0]; ?>
