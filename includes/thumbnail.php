@@ -14,7 +14,8 @@
 
 ?>
 <?php $thelayout = the_layout(); ?>
-<?php if(($thelayout!='blocks'||($thelayout=='blocks'&&ot_get_option('blocks_style')!='fluid_blocks')))$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+<?php if((ot_get_option('lazy_load_img')=='on' && !is_bot())&&($thelayout!='blocks'||($thelayout=='blocks'&&ot_get_option('blocks_style')!='fluid_blocks')))$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+
 <?php if ( has_post_thumbnail() ) { ?>
 	<?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');?>
 	<?php $imgsrc = $large_image_url[0]; ?>
@@ -37,7 +38,7 @@
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="fancyimg home-blog-entry-thumb">
 		<?php } ?>
 			<div class="thumb-img">
-			<img src="<?php echo tin_thumb_source($imgsrc);?>" alt="<?php the_title(); ?>">
+        <img <?php echo $lazy; ?>="<?php echo tin_thumb_source($imgsrc); ?>" alt="<?php the_title(); ?>">
 			<span><?php the_article_icon();?></span>			
 			</div>
 		</a>

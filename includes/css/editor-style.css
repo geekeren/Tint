@@ -19,7 +19,8 @@ p {text-indent:2em;line-height: 180%;margin: 10px 0}
 a{color: #308DDD;text-decoration: underline}
 a:hover{text-decoration: underline;text-decoration-style：dotted;color:#d9534f}
 img{border-radius: 3px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);margin: 20px auto;display: block;}
-
+.wp-caption {max-width: 100%;padding: 4px;}
+.wp-caption-text{text-align:center; margin-top:10px; font-size:16px;}
 ul li{margin-left: 20px;list-style: circle inside;}
 
 blockquote {margin: 10px 0; padding: 10px 10px 10px 40px; border-top: 1px solid #f5f5f5; border-right: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; border-left: 5px solid #f5f5f5; font-size:13px; font-size:1.3rem; position:relative;}

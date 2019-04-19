@@ -147,7 +147,7 @@ function tin_newsletter_setup_schedule() {
 		wp_schedule_event( '1416621600', 'weekly', 'tin_newsletter_weekly_hook');
 	}
 }
-add_action( 'wp', 'tin_newsletter_setup_schedule' );
+//add_action( 'wp', 'tin_newsletter_setup_schedule' );
 
 //定时更新newsletter发送文章的ID列表meta @wp_tin_meta @meta_key issue user_id=0| special user_id=special_id，然后发送最新一期newsletter
 function tin_newsletter_weekly_event(){

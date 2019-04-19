@@ -71,7 +71,7 @@ Template Name: 演示页面
 <!-- 引入主题样式表 -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css"  />
 <!-- 引入字体样式表-->
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/fonts/font-awesome/font-awesome.css"  media="all" />
+<link rel="stylesheet" type="text/css" href="<?php echo ot_get_option('jquery_source', 'local_jq') == 'cdn_jq' ? 'https://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.css' : bloginfo('template_directory').'/fonts/font-awesome/font-awesome.css' ?>"  media="all" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>

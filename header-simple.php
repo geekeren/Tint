@@ -32,8 +32,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI.'/includes/css/responsive.css'; ?>"  />
 <!-- 引入自定义样式表 -->
 <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI.'/includes/css/customcss.php'; ?>"  />
-<!-- 引入字体样式表-->
-<link rel="stylesheet" type="text/css" href="<?php echo THEME_URI.'/fonts/font-awesome/font-awesome.css'; ?>"  media="all" />
+<!-- 引入字体样式表--><link rel="stylesheet" type="text/css" href="<?php echo ot_get_option('jquery_source', 'local_jq') == 'cdn_jq' ? 'https://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.css' : THEME_URI.'/fonts/font-awesome/font-awesome.css' ?>"  media="all" />
 <?php wp_head(); ?>
 <!-- IE Fix for HTML5 Tags -->
 <!--[if lt IE 9]>

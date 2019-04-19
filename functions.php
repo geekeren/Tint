@@ -148,7 +148,7 @@ if (!is_admin()) {
     function add_scripts()
     {
         if (ot_get_option('jquery_source', 'local_jq') == 'cdn_jq') {
-            $jq = 'http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js';
+            $jq = 'https://libs.baidu.com/jquery/2.0.0/jquery.min.js';
         } else {
             $jq = THEME_URI . '/includes/js/jquery.min.js';
         }
@@ -2265,26 +2265,36 @@ function tin_redirect()
 
 // add_action('template_redirect', 'tin_redirect');
 
+function is_bot(){
+    $ua = strtolower($_SERVER['HTTP_USER_AGENT']);
+    $botchar = "/(baidu|google|spider|soso|bot|yahoo|sohu-search|yodao|robozilla)/i";
+    if(preg_match($botchar, $ua)) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
 /* 文章图片添加box-hide类用于延迟加载
 /* ----------------------------------- */
 function add_lazy_class($content)
 {
-    if (ot_get_option('lazy_load_img') != 'on') return $content;
-    preg_match_all('/<img[^>]+class=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
-    foreach ($matches[1] as $val) {
-        $rep = 'class="' . $val;
-        $new = 'class="box-hide ' . $val;
-        $content = str_replace("$rep", "$new", $content);
-    }
+    if (ot_get_option('lazy_load_img') != 'on' || is_bot()) return $content;
+//    preg_match_all('/<img[^>]+class=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
+//    foreach ($matches[1] as $val) {
+//        $rep = 'class="' . $val;
+//        $new = 'class="box-hide ' . $val;
+//        $content = str_replace("$rep", "$new", $content);
+//    }
+    $content = str_replace("<img", '<img class="box-hide"', $content);
     preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
-    foreach ($matches[1] as $val) {
+    foreach ($matches[1] as $index=>$val) {
         $rep = 'src="' . $val;
-        $new = 'class="box-hide" src="' . THEME_URI . '/images/image-pending.gif" data-original="' . $val;
+        $new = 'src="' . ($index <= 1 ? $val : THEME_URI . '/images/image-pending.gif').'"  data-original="' . $val;
         $content = str_replace("$rep", "$new", $content);
     }
     return $content;
 }
-
 add_filter('the_content', 'add_lazy_class', 97);
 
 /* 链接美化缩短

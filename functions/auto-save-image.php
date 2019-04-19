@@ -67,8 +67,8 @@ function insert_attachment($file,$id){
 		'post_status'=>'inherit'
 	);
 	$attach_id=wp_insert_attachment($attachment,$file,$id);
-	//$attach_data=wp_generate_attachment_metadata($attach_id,$file);
-	//wp_update_attachment_metadata($attach_id,$attach_data);
+	$attach_data=wp_generate_attachment_metadata($attach_id,$file);
+	wp_update_attachment_metadata($attach_id,$attach_data);
 	return $attach_id;
 }
 

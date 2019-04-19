@@ -47,7 +47,7 @@ class TinPosts extends WP_Widget {
 			),
 		) );
 	?>
-	<?php if(ot_get_option('lazy_load_img')=='on')$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
+	<?php if(ot_get_option('lazy_load_img')=='on' && !is_bot())$lazy = 'class="box-hide" src="'.THEME_URI.'/images/image-pending.gif" data-original';else $lazy ='src'; ?>
 	<ul class="tin-posts group <?php if($instance['posts_thumb']) { echo 'thumbs-enabled'; } ?>">
 		<?php $i = 0; ?>
 		<?php while ($posts->have_posts()): $posts->the_post(); ?>

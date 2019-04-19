@@ -227,7 +227,7 @@ input#subscribe{width:240px}
 
 @media screen and (max-width: 640px) {
 html{font-size: 62.5%;}
-body,p,body a{font-size: 12px;font-family: "Microsoft YaHei","微软雅黑",arial,consolas,"sans-serif" !important;}
+body,p,body a{font-size: 14px;font-family: "Microsoft YaHei","微软雅黑",arial,consolas,"sans-serif" !important;}
 .postlist-meta,.stickys-container .meta,span,a,div,button,input, select, option, textarea,h1, h2, h3, h4, h5, h6, p, blockquote, pre,code,form,legend,label,table,li,li a{font-family: "Microsoft YaHei","微软雅黑",arial,consolas,"sans-serif" !important;}
 .site_loading{height:2px;}
 .catlist-container:hover, #main-wrap-left .bloglist-container:hover, .stickys:hover,#blocks-bar .col.span_1_of_3 article:hover,.blocks .col.span_1_of_4 article:hover{border-color: transparent;box-shadow: none;}
@@ -332,7 +332,7 @@ input[type="search"]{padding: 5px 10px;}
 .sg-tag a{display: inline-block;margin-bottom: 5px;}
 #content-index{max-width: 150px;min-width: 120px;}
 .content .rates,.stars{font-size:12px;margin: 10px 0 10px;}
-.content h2{margin: 10px -5px; border:none;}
+.content h2{margin: 1.5em -5px 1em -5px; border:none;}
 .sg-cp{padding:5px 5px 5px 40px;font-size:12px;}
 .sg-cp p{line-height: 130%;padding-top:5px; padding-bottom:5px; }
 .sg-author .img{margin-left:5px;}
@@ -415,8 +415,6 @@ body.page #guide .group ul li a.current,#guide .group ul.sub li,#guide .group ul
 }
 
 @media screen and (max-width: 480px){
-h2,h2 a{font-size:14px !important;}
-h3,h3 a{font-size:13px !important;}
 article p,.content,.content a,single-content,single-text,single-content a,single-text a,.sg-cp p{font-size:11px !important;}
 .content h2{padding-left:5px;}
 #content-index-wrap {display : none;}

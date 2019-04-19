@@ -73,7 +73,11 @@
 </section>
 </div>
 
-<?php get_template_part('includes/loginbox'); ?>
+<?php
+  if(!is_user_logged_in()) {
+      get_template_part('includes/loginbox');
+  }
+?>
 <?php get_template_part('includes/floatbutton'); ?>
 <!-- /.Footer Nav Wrap -->
 <?php $thelayout = the_layout(); if(is_home()&&$thelayout=='blocks'){ ?>
@@ -116,7 +120,7 @@ var tin = <?php echo tin_js_objects(); ?>
 <?php wp_footer(); ?>
 <!-- /.Footer -->
 <script type="text/javascript">
-	$('.site_loading').animate({'width':'100%'},50);  //第五个节点
+	$('.site_loading').animate({'width':'100%'},50);  //第五个节点, <?php echo get_num_queries(); ?> 次查询操作
 </script>
 </body>
 </html>

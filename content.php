@@ -13,7 +13,7 @@
 **/
 
 ?>
-<?php get_template_part('includes/thumbnail'); ?>
+  <?php get_template_part('includes/thumbnail'); ?>
 <?php if(!is_search()): ?>
 <div class="home-blog-entry-text clr">
 <h3>

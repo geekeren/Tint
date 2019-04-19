@@ -229,7 +229,7 @@ function custom_theme_options() {
                 ),
 				array(
                     'value'     => 'cdn_jq',
-                    'label'     => __('新浪CDN jQuery','tinection')
+                    'label'     => __('百度CDN jQuery','tinection')
                 ),
 			),
             'std'       => 'local_jq',
@@ -1005,24 +1005,28 @@ function custom_theme_options() {
             'label'     => __('移动端标题字体大小','tinection'),
             'desc'      => __('移动端标题字体大小','tinection'),
             'type'      => 'select',
-			'choices'   => array( 
-                             array(
-                                'value'       => '12px',
-                                'label'       => __('12像素','tinection'),
-                                ),
-                             array(
-                                'value'       => '13px',
-                                'label'       => __('13像素','tinection'),
-                                ),
-							 array(
-                                'value'       => '14px',
-                                'label'       => __('14像素','tinection'),
-                                ),
-							 array(
-                                'value'       => '15px',
-                                'label'       => __('15像素','tinection'),
-                                ),
-                           ),
+            'choices' => array(
+                array(
+                    'value' => '12px',
+                    'label' => __('12像素', 'tinection'),
+                ),
+                array(
+                    'value' => '13px',
+                    'label' => __('13像素', 'tinection'),
+                ),
+                array(
+                    'value' => '14px',
+                    'label' => __('14像素', 'tinection'),
+                ),
+                array(
+                    'value' => '15px',
+                    'label' => __('15像素', 'tinection'),
+                ),
+                array(
+                    'value' => '16px',
+                    'label' => __('16像素', 'tinection'),
+                ),
+            ),
 			'std'		=> '12px',
             'section'   => 'color'
         ),
@@ -1032,24 +1036,24 @@ function custom_theme_options() {
             'label'     => __('移动端内容字体大小','tinection'),
             'desc'      => __('移动端内容字体大小','tinection'),
             'type'      => 'select',
-			'choices'   => array( 
-                             array(
-                                'value'       => '10px',
-                                'label'       => __('10像素','tinection'),
-                                ),
-                             array(
-                                'value'       => '11px',
-                                'label'       => __('11像素','tinection'),
-                                ),
-							 array(
-                                'value'       => '12px',
-                                'label'       => __('12像素','tinection'),
-                                ),
-							 array(
-                                'value'       => '13px',
-                                'label'       => __('13像素','tinection'),
-                                ),
-                           ),
+            'choices' => array(
+                array(
+                    'value' => '11px',
+                    'label' => __('11像素', 'tinection'),
+                ),
+                array(
+                    'value' => '12px',
+                    'label' => __('12像素', 'tinection'),
+                ),
+                array(
+                    'value' => '13px',
+                    'label' => __('13像素', 'tinection'),
+                ),
+                array(
+                    'value' => '14px',
+                    'label' => __('14像素', 'tinection'),
+                ),
+            ),
 			'std'		=> '10px',
             'section'   => 'color'
         ),
@@ -1129,6 +1133,33 @@ function custom_theme_options() {
         array(
             'id'        => 'tin_open_weixin_key',
             'label'     => __('微信开放平台SECRET','tinection'),
+            'desc'      => '',
+            'type'      => 'text',
+            'std'       => '',
+            'section'   => 'open'
+        ),
+        // Open: Github快速登录
+        array(
+            'id'        => 'tin_open_github',
+            'label'     => __('Github快速登录','tinection'),
+            'desc'      => __('在登录弹窗以及评论区域显示Github快速登录按钮，需要自行申请APP KEY','tinection'),
+            'type'      => 'on-off',
+            'std'       => 'off',
+            'section'   => 'open'
+        ),
+        // Open: Github KEY
+        array(
+            'id'        => 'tin_open_github_client_id',
+            'label'     => __('Github Client ID','tinection'),
+            'desc'      => '',
+            'type'      => 'text',
+            'std'       => '',
+            'section'   => 'open'
+        ),
+        // Open: Github SECRET
+        array(
+            'id'        => 'tin_open_github_client_secret',
+            'label'     => __('Github Client Secret','tinection'),
             'desc'      => '',
             'type'      => 'text',
             'std'       => '',

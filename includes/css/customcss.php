@@ -80,7 +80,7 @@ article h3 a:hover,.tab-item-title a:hover,.more-link,.slider-text h2 a:hover,.s
 	#flexslider-right{background:<?php echo $bkgdcolor; ?>}
 }
 #content-container{background:<?php echo $bkgdcolor; ?>}
-@media screen and (max-width: 480px){
+@media screen and (max-width: 640px){
 	h3,h3 a{font-size:<?php echo $mobile_title_font_size;?> !important;}
-	article p,.content,.content a,.content li,single-content,single-text,single-content a,single-text a,.sg-cp p,.widget,.widget a{font-size:<?php echo $mobile_content_font_size;?> !important;}
+	article p,.content,.content a,.content li,.single-content,.single-text,.single-content a,.single-text a,.sg-cp p,.widget,.widget a{font-size:<?php echo $mobile_content_font_size;?> !important;}
 }

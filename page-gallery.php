@@ -44,8 +44,8 @@ template name: 文章相册
 <!-- 引入相册样式表-->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/includes/css/sgallery.css"  />
 <!-- 引入字体样式表-->
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/fonts/font-awesome/font-awesome.css"  media="all" />
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo ot_get_option('jquery_source', 'local_jq') == 'cdn_jq' ? 'https://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.css' : bloginfo('template_directory').'/fonts/font-awesome/font-awesome.css' ?>"
+  <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <!-- 引入jquery -->
